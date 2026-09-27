@@ -1,0 +1,20 @@
+{
+  "name": "StudyMate (Flutter)",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.dart-code",
+        "Dart-Code.flutter"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "StudyMate (Flutter web)",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
